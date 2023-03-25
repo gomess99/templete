@@ -12,6 +12,7 @@
         $query = $auau->query($sql);
 
         if($query){ ?>
+            <!--https://sweetalert2.github.io/ site para criar alerts em javascript-->
             <script language="javascript">
             Swal.fire({
                 title: 'Salvo',
@@ -21,7 +22,7 @@
                 }).then((result) => {
                 /* Read more about isConfirmed, isDenied below */
                 if (result.isConfirmed) {
-                    location.href="../dash.php?r=cadastrar_prod";
+                    location.href="../adm/index.php";
                 }
                 })
             </script>
@@ -35,7 +36,7 @@
                 }).then((result) => {
                 /* Read more about isConfirmed, isDenied below */
                 if (result.isConfirmed) {
-                    location.href="../dash.php?r=cadastrar_prod";
+                    location.href="../adm/index.php";
                 }
                 })
             </script>
